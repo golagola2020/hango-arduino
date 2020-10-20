@@ -19,22 +19,22 @@
 
    1-1. 이미 $ sudo apt-get install arduino로 깔려있다면 아래의 명령어를 통해 제거 
    ```
-   sudo apt-get --purge remove arduino
-   sudo apt-get autoremove
-   sudo apt-get clean
+   $ sudo apt-get --purge remove arduino
+   $ sudo apt-get autoremove
+   $ sudo apt-get clean
    ```
    2. www.arduino.cc를 방문해 Linux ARM 버전의 설치파일 다운
    (사진)
    3. 압축 해제 및 설치
    ```
-   cd ~
-   mkdir Programs
-   cd ~/Downloads
-   cp ./arduino-1.8.13-linuxarm.tar.xz ~/arduinoIDE
-   cd ~/arduinoIDE
-   tar xvf arduino-1.8.13-linuxarm.tar.xz
-   cd arduino-1.8.13
-   ./install.sh
+   $ cd ~
+   $ mkdir Programs
+   $ cd ~/Downloads
+   $ cp ./arduino-1.8.13-linuxarm.tar.xz ~/arduinoIDE
+   $ cd ~/arduinoIDE
+   $ tar xvf arduino-1.8.13-linuxarm.tar.xz
+   $ cd arduino-1.8.13
+   $ ./install.sh
    ```
 
 ## 설치(로컬)
