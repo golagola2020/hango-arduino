@@ -13,7 +13,7 @@
    Resistor effects sensitivity, experiment with values, 50K - 50M. Larger resistor values yield larger sensor values.
    Receive pin is the sensor pin - try different amounts of foil/metal on this pin
 */
-CapacitiveSensor keys[] = {CS(3), CS(4), CS(5), CS(6), CS(7), CS(8), CS(9), CS(10)};
+CapacitiveSensor keys[] = {CS(3), CS(4), CS(5), CS(6), CS(8), CS(9), CS(10), CS(11)};
 
 bool hand_exist = false;   //손의 인식 상태
 
@@ -22,6 +22,8 @@ int sensed_position;
 char serial_touch[3] = {0};
 int digit = 1;
 int touch;                 //손으로 터치한 capacitive sensor의 위치
+int duplicate = 0;               //hand's number counting that touch sensor is sensed
+int overlap=0;
 
 void setup()
 {
@@ -40,12 +42,13 @@ void loop()
   for (int i = 0; i < NUM_OF_KEYS; ++i) {
 
     // 만약 capacitance가 지정한 문턱전압보다 커지면 if문 실행
-    if (keys[i].capacitiveSensor(NUM_OF_SAMPLES) > 2000 ) {
+    if (keys[i].capacitiveSensor(NUM_OF_SAMPLES) > 3000 ) {
       sensed_position = i;    //capacitive sensor가 눌렸을 때
-      break;
-    }
-    else sensed_position = -1;  //capacitive sensor가 눌리지 않았을 때
+      overlap += 1;
+    } 
   }
+  if (overlap == 1 || overlap == 0) duplicate = false;
+  if (overlap > 1) duplicate = true;
 
   // rx,tx 통신을 통해 받아오는 push button 값
   for (int i = 0; i < 3 ; i++) { //십의자리 수 까지만 받아옴. (최대 99)
@@ -65,6 +68,8 @@ void loop()
   if (sensed_position >= -1 && sensed_position < NUM_OF_KEYS && sold_position >= -1 && sold_position < NUM_OF_KEYS) {
     Serial.print("success ");
     Serial.println(true);
+    Serial.print("duplicate ");
+    Serial.println(duplicate);
     Serial.print("sensed_position ");
     Serial.println(sensed_position);
     Serial.print("sold_position ");
@@ -80,7 +85,8 @@ void loop()
   for (int i = 0; i < 3 ; i++) {  //serial_touch 초기화 
     serial_touch[i] = 0;
   }
-
+  overlap = 0;
+  sensed_position = -1;
 
   delay(500);                             // arbitrary delay to limit data to serial port
 }
