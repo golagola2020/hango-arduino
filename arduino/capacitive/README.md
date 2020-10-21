@@ -44,11 +44,12 @@
 
    captest.ino를 통해 터치센서가 제대로 동작하는지 확인할 수 있습니다.  
    
-   Tool의 Serial Moniter를 켜면
+   Tool의 Serial Moniter를 켜면  
+   - 터치센서를 누르지 않았을 때
 ![캡처1](https://user-images.githubusercontent.com/67812466/96619551-449eec80-1341-11eb-98f3-4e6ba00486ea.PNG)  
-터치센서를 누르지 않았을 때
+   - 터치센서를 눌렀을 때   
 ![캡처2](https://user-images.githubusercontent.com/67812466/96619556-47014680-1341-11eb-9586-329a28cd106f.PNG)  
-터치센서를 눌렀을 때 
+
 두가지 상황을 쉽게 볼 수 있습니다.
 
    4.Uart통신 준비
