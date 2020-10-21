@@ -1,3 +1,4 @@
+#include <Char2Int.h>
 #include <CapacitiveSensor.h>
 
 
@@ -14,7 +15,6 @@ bool hand_exist = false;     //손의 인식 상태
 int sold_position;           //음료수 판매 위치(푸시 버튼이 눌린 곳)
 int sensed_position;         //인식된 터치 센서 위치
 char serial_touch[3] = {0};  //char형으로 받아진 시리얼을 99까지 처리하기 위한 array
-int touch;                   //손으로 터치한 capacitive sensor의 위치
 int overlap=0;               //감지된 터치 센서의 수 
 int duplicate = 0;           //overlap이 0 혹은 1이면 true, 그렇지않으면 false
 
@@ -59,7 +59,7 @@ void loop()
     }
   }
 
-  sold_position = char_to_int(serial_touch[1]) * 10 + char_to_int(serial_touch[0]) - 1 ;
+  sold_position = char2int(serial_touch[1]) * 10 + char2int(serial_touch[0]) - 1 ;
   
   if (sensed_position >= -1 && sensed_position < NUM_OF_KEYS && sold_position >= -1 && sold_position < NUM_OF_KEYS) {
     Serial.print("success ");
