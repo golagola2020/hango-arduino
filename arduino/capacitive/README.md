@@ -1,5 +1,6 @@
 # hango-arduino/arduino/capacitive
    * 이 리드미 파일은 터치 센서를 설치하고 실행하는데 도움을 주기 위해 작성되었습니다.
+   * 먼저 [푸시 버튼](https://github.com/golagola2020/hango-arduino/tree/master/arduino/pushButton)과정을 마치고 읽으시길 추천합니다.
 
    1.준비물  
    쿠킹 호일(적당한 크기로 8등분), 4.7MΩ 저항 8개, 전선 16개  
