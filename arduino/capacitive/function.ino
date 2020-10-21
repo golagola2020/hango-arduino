@@ -1,4 +1,3 @@
-
 //char -> int 범위 : 0 ~ 9
 //Uart only recognize ascii values
 int char_to_int(char data){
