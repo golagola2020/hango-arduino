@@ -1,9 +1,9 @@
 #define PIN_COUNT 8
 
-const int PIN[PIN_COUNT] = {2, 3, 4, 5, 6, 7, 8, 9};
+const int PIN[PIN_COUNT] = {2, 3, 4, 5, 6, 7, 8, 9}; //푸시버튼에 할당된 핀
 
-int sold_position;
-int btn[8];
+int sold_position;      //음료수 판매 위치(푸시 버튼이 눌린 곳)
+int btn[8];             //각 버튼이 눌렸는지 확인 할 수 있는 array
 
 
 void setup() {
