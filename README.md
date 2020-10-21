@@ -69,6 +69,7 @@
 > 주의 : 아두이노 2개를 RX,TX 핀을 통해 UART 통신을 하기 때문에 파일을 실행할 때 적절한 포트로 실행되었는지 확인해 주세요.  
    1. 푸시 버튼 연결
    * 초소형 브레드보드를 이용해 원하는 위치에 맞춰 푸시버튼을 배치한 뒤 연결해줍니다.
+
    [연결방법](https://github.com/golagola2020/hango-arduino/tree/master/arduino/pushButton)
    ```c++
    #define PIN_COUNT 8   //푸시 버튼의 수
@@ -76,6 +77,7 @@
 
    2. 터치 센서 연결
    * 쿠킹 호일을 이용한 터치센서 연결
+
    [연결방법](https://github.com/golagola2020/hango-arduino/tree/master/arduino/capacitive) 
    ```c++
    #include <CapacitiveSensor.h>   

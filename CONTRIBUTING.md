@@ -16,7 +16,7 @@
 
 
 ## 참고
-1. Issue : [바로가기](https://github.com/golagola2020/hango-server/issues?q=is%3Aissue+is%3Aclosed)
+1. Issue : [바로가기](https://github.com/golagola2020/hango-arduino/issues?q=is%3Aissue+is%3Aclosed)
 <img width="744" alt="스크린샷 2020-10-10 오전 4 05 55" src="https://user-images.githubusercontent.com/56839474/95623247-ec016100-0aaf-11eb-8c16-edaffd48c3c8.png">
 
 2. Branch or Commit
@@ -27,5 +27,5 @@ $ git push origin 'features to develop'
 ```
 
 
-3. Pull Request : [바로가기](https://github.com/golagola2020/hango-server/pulls?q=is%3Apr+is%3Aclosed)
+3. Pull Request : [바로가기](https://github.com/golagola2020/hango-arduino/pulls?q=is%3Apr+is%3Aclosed)
 <img width="700" alt="스크린샷 2020-10-10 오전 4 23 05" src="https://user-images.githubusercontent.com/56839474/95623527-5f0ad780-0ab0-11eb-8078-b6ba942a55b4.png">
