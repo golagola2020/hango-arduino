@@ -61,7 +61,7 @@
 
    4.Uart통신 준비
 
-   [pushButton](https://github.com/golagola2020/hango-arduino/tree/arduino/readme/arduino/pushButton)의 README.md를 참고해 설치해놓았던
+   [pushButton의 README.md](https://github.com/golagola2020/hango-arduino/tree/master/arduino/pushButton)를 참고해 설치해놓았던
    푸시 버튼과 RX,TX핀으로 통신을 할 것입니다.  
     pushButton의 아두이노의 TX핀과 Capacitive의 아두이노의 RX핀을 연결할 준비를 합니다. (아직 연결하지마세요)
 
@@ -77,7 +77,7 @@
    sold_position -1
    ```
  
-   푸시 버튼을 눌렀을 때는 sold_position이 변하고, 터치 센서를 눌렀을 때는 sensed_position이 변하게 됩니다.
+   푸시 버튼을 눌렀을 때는 sold_position이 변하고, 터치 센서를 눌렀을 때는 sensed_position이 변하게 됩니다.  
    두 변수 모두 -1 ~ 7 사이의 값으로 나옵니다.
 
    각 버튼을 눌러보며 정상 작동하는지 확인해주세요. 
