@@ -1,3 +1,5 @@
+//이 코드는 capacitive.ino를 하기 전 터치 센서의 작동을 확인하기 위한 코드입니다.
+
 #include <CapacitiveSensor.h>
  
 #define COMMON_PIN      2    // The common 'send' pin for all keys
