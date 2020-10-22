@@ -2,6 +2,8 @@
 > 주의 : [GitHub Pages](https://pages.github.com/)에 대해서 충분히 숙지할 것.  
 주의 : [Collaborating with issues and pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests)을 정독할 것
 
+![자판기 외형](https://user-images.githubusercontent.com/67812466/96901337-17cc1000-14ce-11eb-81a0-6255cb891a2b.PNG)
+
 ## 안내
 #### 하드웨어
    1. [아두이노 시작하기](https://github.com/golagola2020/hango-arduino)를 통해 사물을 감지하고, 라즈베리파이로 감지 데이터를 송신할 수 있습니다.
@@ -105,15 +107,13 @@ $ git push origin 'features to develop'
    1. 포크 동기화 [Syncing a fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
    2. Pull Request 보내기 [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
 
-## 데모
-#### 클라이언트 데모
-> v1.0 : https://youtu.be/D2CXURqW8qs
-#### 모바일 데모
-> v1.0 : https://youtu.be/K7cLH89WKPQ
+## 데모(Guide)
+[![image](https://user-images.githubusercontent.com/67812466/96902448-8067bc80-14cf-11eb-8746-b9c41a3061e7.png)](https://www.youtube.com/watch?v=KiW2KVlonIA&feature=youtu.be)
 
 
 ## 개발 환경
 
+   * Arduino Uno
    * Arduino IDE @1.8.13
 
 ## 기여하기
@@ -125,4 +125,4 @@ $ git push origin 'features to develop'
 
  - **안혜수** [shehdn](https://github.com/suehdn)   
 
-[기여자 목록](https://github.com/golagola2020/hango-client/graphs/contributors)을 확인하여 이 프로젝트에 참가하신 분들을 보실 수 있습니다.
+[기여자 목록](https://github.com/golagola2020/hango-arduino/graphs/contributors)을 확인하여 이 프로젝트에 참가하신 분들을 보실 수 있습니다.
