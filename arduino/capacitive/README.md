@@ -32,7 +32,7 @@
 
 - 전체적인 구조(X 모양의 부위는 서로 연결되었다는 뜻(납땜))
 
-![터치센서](https://user-images.githubusercontent.com/67812466/96615979-f4259000-133c-11eb-9b72-0a9786593e91.PNG)
+![터치센서](https://user-images.githubusercontent.com/67812466/96829064-c727c900-1473-11eb-977f-d28c495047ba.PNG)
 
 
 - 납땜 방식
