@@ -1,3 +1,9 @@
+/*
+ * hango-arduino
+ * Copyright (c) 2020 Golagola
+ * MIT License
+*/
+
 #include <Char2Int.h>
 #include <CapacitiveSensor.h>
 
