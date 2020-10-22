@@ -1,3 +1,9 @@
+/*
+ * hango-arduino
+ * Copyright (c) 2020 Golagola
+ * MIT License
+*/
+
 #define PIN_COUNT 8
 
 const int PIN[PIN_COUNT] = {2, 3, 4, 5, 6, 7, 8, 9}; //푸시버튼에 할당된 핀
