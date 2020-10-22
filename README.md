@@ -23,12 +23,12 @@
    $ sudo apt-get autoremove
    $ sudo apt-get clean
    ```
-   2. www.arduino.cc를 방문해 Linux ARM 버전의 설치파일 다운
+   2. [www.arduino.cc](https://www.arduino.cc/en/Main/Software)를 방문해 Linux ARM 버전의 설치파일 다운
    (사진)
    3. 압축 해제 및 설치
    ```
    $ cd ~
-   $ mkdir Programs
+   $ mkdir arduinoIDE
    $ cd ~/Downloads
    $ cp ./arduino-1.8.13-linuxarm.tar.xz ~/arduinoIDE
    $ cd ~/arduinoIDE
