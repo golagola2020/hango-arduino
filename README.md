@@ -108,7 +108,7 @@ $ git push origin 'features to develop'
    2. Pull Request 보내기 [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
 
 ## 데모(Guide)
-[![image](https://user-images.githubusercontent.com/67812466/96902448-8067bc80-14cf-11eb-8746-b9c41a3061e7.png)](https://www.youtube.com/watch?v=KiW2KVlonIA&feature=youtu.be)
+[![Watch the video](https://user-images.githubusercontent.com/56839474/96984351-6673bb80-155b-11eb-938e-824676885b58.png)](https://youtu.be/KiW2KVlonIA)
 
 
 ## 개발 환경
