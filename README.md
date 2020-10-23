@@ -2,7 +2,6 @@
 > 주의 : [GitHub Pages](https://pages.github.com/)에 대해서 충분히 숙지할 것.  
 주의 : [Collaborating with issues and pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests)을 정독할 것
 
-![자판기 외형](https://user-images.githubusercontent.com/67812466/96901337-17cc1000-14ce-11eb-81a0-6255cb891a2b.PNG)
 
 ## 안내
 #### 하드웨어
@@ -14,6 +13,15 @@
    
 #### 웹서버
    1. [웹서버 시작하기](https://github.com/golagola2020/hango-server)를 통해 hango-server와 hango-mysql을 구축하고, API 서버를 통해 클라이언트에게 데이터를 제공하며, 고객 관리 시스템을 이용할 수 있습니다.
+   
+## 소개
+> 시각장애인을 위한 Hango 자판기
+    
+   1. 음료수를 구매할 수 있는 자판기 버튼 (Push Button으로 구현)
+   2. 어떤 음료수인지 알수 있도록 손을 대면 센싱하는 터치 센서 (쿠킹 호일으로 구현)
+   3. 시각장애인을 위한 점자 부착
+   
+   ![자판기 외형](https://user-images.githubusercontent.com/67812466/96901337-17cc1000-14ce-11eb-81a0-6255cb891a2b.PNG)
    
 ## 시작하기에 앞서
 [hango-arduino](https://github.com/golagola2020/hango-arduino) 프로젝트를 실행시키기 위한 프로그램 설치
