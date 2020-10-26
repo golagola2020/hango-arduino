@@ -13,7 +13,7 @@ CapacitiveSensor keys[] = {CS(11), CS(10), CS(9), CS(8), CS(6), CS(5), CS(4), CS
 bool hand_exist = false;     //손의 인식 상태
 
 int sold_position;           //음료수 판매 위치(푸시 버튼이 눌린 곳)
-int sensed_position;         //인식된 터치 센서 위치
+int sensed_position = -1;         //인식된 터치 센서 위치
 char serial_touch[3] = {0};  //char형으로 받아진 시리얼을 99까지 처리하기 위한 array
 int overlap=0;               //감지된 터치 센서의 수 
 int duplicate = 0;           //overlap이 0 혹은 1이면 true, 그렇지않으면 false
@@ -36,7 +36,7 @@ void loop()
   for (int i = 0; i < NUM_OF_KEYS; ++i) {
 
     // 만약 capacitance가 지정한 문턱전압보다 커지면 if문 실행
-    if (keys[i].capacitiveSensor(NUM_OF_SAMPLES) > 3000 ) {
+    if (keys[i].capacitiveSensor(NUM_OF_SAMPLES) > 5000 ) {
       sensed_position = i;    //capacitive sensor가 눌렸을 때
       overlap += 1;
     } 
@@ -61,7 +61,7 @@ void loop()
 
   sold_position = char2int(serial_touch[1]) * 10 + char2int(serial_touch[0]) - 1 ;
   
-  if (sensed_position >= -1 && sensed_position < NUM_OF_KEYS && sold_position >= -1 && sold_position < NUM_OF_KEYS) {
+  if (sensed_position >= -1 && sensed_position < NUM_OF_KEYS && sold_position >= -1 && sold_position < NUM_OF_KEYS) { 
     Serial.print("success ");
     Serial.println(true);
     Serial.print("duplicate ");
